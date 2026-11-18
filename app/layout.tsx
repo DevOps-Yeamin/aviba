@@ -7,6 +7,7 @@ import { CartProvider } from "@/components/CartProvider";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { SITE } from "@/lib/site-config";
 import { MessageCircle } from "lucide-react";
+import { Analytics } from "@vercel/analytics/next";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -105,6 +106,7 @@ export default function RootLayout({
             </a>
           </CartProvider>
         </SmoothScroll>
+        <Analytics />
       </body>
     </html>
   );
